@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="2x2"
-      href="images/dev_icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="2x2" href="images/dev_icon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -24,6 +19,7 @@
     <style>
       body {
         font-family: "Reenie Beanie", cursive;
+        font-size: 28px;
       }
       .container {
         width: 50%;
@@ -39,8 +35,8 @@
       }
 
       .resume:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        transform: translateY(-10px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        transform: translateY(-20px);
       }
 
       .full-screen {
@@ -71,20 +67,31 @@
         <img src="images/giphy.webp" alt="WIP">
     </div> -->
 
-    <div class="container">
+    <div
+      class="container resume centered-div"
+      style="
+        margin: auto;
+        border: 1px solid black;
+        padding: 20px;
+        box-shadow: 5px 5px 5px 5px #aaaaaa;
+        border-radius: 0px 20px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      "
+    >
       <div class="row">
-        <div
-          class="col-12 col-lg-6 resume centered-div"
-          style="
-            margin: auto;
-            border: 1px solid black;
-            padding: 20px;
-            box-shadow: 5px 5px #aaaaaa;
-            border-radius: 0px 20px;
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-          "
-        >
-          <h1 class="font-weight-bold">Hi I'm Pritam Waiba</h1>
+        <div class="col-12">
+          <h1 class="font-weight-bold" style="font-size: 48px">
+            Hi I'm Pritam Waiba
+          </h1>
+          <p>Computer Science, <a href="https://www.tuiost.edu.np/" target="_blank">Tribhuvan University</a></p>
+          <h2 style="font-size: 40px" class="font-weight-bold">About me</h2>
+          <p>
+            I am a skilled Python developer with experience in building web
+            applications using Django. I am passionate about leveraging my
+            knowledge and expertise to contribute to innovative projects. With a
+            strong foundation in computer science, I am eager to continue
+            learning and growing in this dynamic field of software development.
+          </p>
           <a
             href="/static/PritamWaiba_resume.pdf"
             style="font-size: 30px"
