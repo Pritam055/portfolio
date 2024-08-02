@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Waiba</title>
 
     <style>
@@ -34,9 +35,17 @@
         background-color: #45a049;
       }
 
+      .resume {
+        margin: auto;
+        border: 1px solid black;
+        padding: 20px;
+        box-shadow: 10px 10px #aaaaaa;
+        border-radius: 0px 20px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
       .resume:hover {
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-        transform: translateY(-20px);
+        box-shadow: 15px 15px 30px rgba(43, 42, 42, 0.6);
+        transform: translateY(-10px);
       }
 
       .full-screen {
@@ -48,15 +57,55 @@
       .centered-div {
         text-align: center;
       }
+      .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #000;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0077b5; /* LinkedIn color */
+        }
+        .social-links a.github:hover {
+            color: #333; /* GitHub color */
+        }
+        .social-links a.email:hover {
+            color: #dd4b39; /* Email color */
+        }
+
+      @media screen and (max-width: 1140px){
+        .container{
+          width: 70%;
+        }
+        .resume:hover {
+          box-shadow: 5px 5px 30px rgba(43, 42, 42, 0.6);
+          transform: translateX(-2px);
+        }
+      }
+
+      @media screen and (max-width: 720px) {
+        .resume:hover {
+          box-shadow: 5px 5px 30px rgba(43, 42, 42, 0.6);
+          transform: translateX(-2px);
+        }
+      }
 
       @media screen and (max-width: 520px) {
         .container {
           width: 90%;
-          margin: 0 auto;
+          margin: auto 5px;
+          border-radius: 20px 20px;
         }
         .container img {
           height: 250px;
           width: 250px;
+        }
+        .resume {
+          box-shadow: none;
         }
       }
     </style>
@@ -67,23 +116,14 @@
         <img src="images/giphy.webp" alt="WIP">
     </div> -->
 
-    <div
-      class="container resume centered-div"
-      style="
-        margin: auto;
-        border: 1px solid black;
-        padding: 20px;
-        box-shadow: 5px 5px 5px 5px #aaaaaa;
-        border-radius: 0px 20px;
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-      "
-    >
+    <div class="container resume centered-div">
       <div class="row">
         <div class="col-12">
           <h1 class="font-weight-bold" style="font-size: 48px">
             Hi I'm Pritam Waiba
           </h1>
-          <p>Computer Science, <a href="https://www.tuiost.edu.np/" target="_blank">Tribhuvan University</a></p>
+          <p><h2 class="font-weight-bold">Education: </h2>Computer Science, <a href="https://www.tuiost.edu.np/" target="_blank">Tribhuvan University</a></p>
+          <p><h2 class="font-weight-bold">Contact:</h2><a href="mailto:waibapritam.dev@gmail.com">waibapritam.dev@gmail.com</a></p>
           <h2 style="font-size: 40px" class="font-weight-bold">About me</h2>
           <p>
             I am a skilled Python developer with experience in building web
@@ -99,6 +139,11 @@
             download="PritamWaiba_resume.pdf"
             >Resume Link</a
           >
+          <div class="social-links">
+            <a href="mailto:waibapritam.dev@gmail.com" class="fas fa-envelope email"></a>
+            <a href="https://www.linkedin.com/in/pritam-waiba-2332a51a1/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://github.com/pritam055" target="_blank" class="fab fa-github github"></a>
+          </div>
         </div>
       </div>
     </div>
